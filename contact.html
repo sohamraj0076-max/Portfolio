@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ .contact {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color:  rgba(255, 255, 255, 0.8);;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(128, 239, 237, 0.1);
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #053b3d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact p {
+  color: #053b3d;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  color: #033639;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #57dbea;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #52e6da;
+}
+
+button {
+  align-self: center;
+  background-color: #035356;
+  color: #ededed;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b6a7d;
+}
+
+.socials {
+  margin-top: 50px;
+}
+
+.socials a {
+  color: #023b38;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-image: url("blur.jpeg");
+  background-size: cover;       /* makes image fill the page */
+  background-repeat: no-repeat; /* prevents tiling */
+  background-attachment: fixed; /* makes it stay while scrolling */
+  background-position: center;  /* centers the image */
+  font-family: 'Poppins', sans-serif; /* optional nice font */
+}
+    </style>
+</head>
+<body>
+    <main>
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <p>Have a question or just want to say hi? I'd love to hear from you!</p>
+
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <h3>Connect with me:</h3>
+      <a href="https://www.linkedin.com/in/sohamraj-patil-3878053a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/sohamraj0076-max" target="_blank">GitHub</a>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

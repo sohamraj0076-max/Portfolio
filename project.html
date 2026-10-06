@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.project {
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.project h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color:#053b3d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px  #053b3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px #053b3d;
+}
+
+.project-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #053b3d;
+}
+
+.project-card p {
+  color: #02433d;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #02433d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #42bacd;
+}
+
+body {
+  background-image: url("blur.jpeg");
+  background-size: cover;       /* makes image fill the page */
+  background-repeat: no-repeat; /* prevents tiling */
+  background-attachment: fixed; /* makes it stay while scrolling */
+  background-position: center;  /* centers the image */
+  font-family: 'Poppins', sans-serif; /* optional nice font */
+}
+    </style>
+</head>
+<body>
+    <main>
+  <section class="project">
+    <h1>My Projects</h1>
+    <div class="project-list">
+
+      <div class="project-card">
+        <h2>Portfolio Website</h2>
+        <p>
+          1. My first step into web development — a simple and elegant portfolio built
+          using HTML, CSS.
+          </p>
+          <p>
+          2. AI Financial Adviser.
+        </p>
+        <p>
+          3. 
+        </p>
+      </div>
+
+  </section>
+</main>
+
+</body>
+</html>

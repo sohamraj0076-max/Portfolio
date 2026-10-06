@@ -1,0 +1,147 @@
+/* ========== Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Body ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #0d0d0d);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* Subtle background animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ========== Navbar ========== */
+nav {
+  background-color: rgba(4, 73, 98, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #edf2f2;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* underline hover animation */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #92edf5;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #0b2325;
+  text-shadow:0 0 1px #0b2325, 0 0 100px #0b2325;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #e5f0f1;
+}
+
+/* Neon button */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: transparent;
+  border: 2px solid #0b2325;
+  color: #0b2325;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px transparent;
+}
+
+.btn:hover {
+  background-color: #92edf5;
+  color: #000000;
+  box-shadow: 0 0 20px #0c2224, 0 0 40px #0c2224;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+body {
+  background-image: url("blur.jpeg");
+  background-size: cover;       /* makes image fill the page */
+  background-repeat: no-repeat; /* prevents tiling */
+  background-attachment: fixed; /* makes it stay while scrolling */
+  background-position: center;  /* centers the image */
+  font-family: 'Poppins', sans-serif; /* optional nice font */
+}
+.about {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+  line-height: 1.8;
+  color: #333;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
